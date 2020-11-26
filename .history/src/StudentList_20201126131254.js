@@ -43,7 +43,7 @@ state = {
       render() {
         return (
             <div>
-                {this.state.students.map(student => <li> {student.pic} {student.firstName} {student.lastName} <br></br> Email: {student.email} <br></br>Company: {student.company} <br></br>Skill: {student.skill} <br></br> </li>)}
+                {this.state.students.map(student => <li> {student.firstName} {student.lastName} <br></br> Email: {student.email} <br></br>Company: {student.company} <br></br>Skill: {student.skill} <br></br> </li>)}
                 {/* Average: {this.props.students.average} */}
                 {/* {this.state.students.grades.reduce((previous, current) => current += previous / this.state.students.grades.length)} */}
             </div>
