@@ -22,7 +22,7 @@ button:focus {
 .StudentList {
   background-color: white;
   border-radius: 12px;
-  grid-area: student;
+  grid-area: content;
   max-height: 90vh;
   overflow-y: auto;
   border: 1px solid lightgrey;
