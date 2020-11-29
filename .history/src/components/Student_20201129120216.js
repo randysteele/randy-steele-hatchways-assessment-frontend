@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
 class Student extends Component {
     constructor() {
@@ -48,14 +45,16 @@ class Student extends Component {
         return (
             <div className="student">
                 <div className="buttonHolder">
+                <i className="fas fa-minus"></i>
                     {this.state.gradesVisible
                         ? <button onClick={this.hideGrades}>
-                          <FontAwesomeIcon icon={faMinus} />
+                            
                         </button>
                         : <button onClick={this.seeGrades}>
-                            <FontAwesomeIcon icon={faPlus} />
+                            <i className="fas fa-plus"></i>
                         </button>
-                    }                </div>
+                    }
+                </div>
             
                 <img className="robotAvatar" src="https://robohash.org/63.143.42.242.png" alt="Robot Avatar"/>
             

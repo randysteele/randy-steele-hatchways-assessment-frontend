@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faMinus } from '@fortawesome/free-solid-svg-icons'
 
 class Student extends Component {
     constructor() {
@@ -50,10 +49,10 @@ class Student extends Component {
                 <div className="buttonHolder">
                     {this.state.gradesVisible
                         ? <button onClick={this.hideGrades}>
-                          <FontAwesomeIcon icon={faMinus} />
+                          <FontAwesomeIcon icon={fa-plus} />
                         </button>
                         : <button onClick={this.seeGrades}>
-                            <FontAwesomeIcon icon={faPlus} />
+                            <FontAwesomeIcon icon={fa-minus} />
                         </button>
                     }                </div>
             
