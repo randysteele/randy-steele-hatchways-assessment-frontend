@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
+
 export default class StudentList extends React.Component {
 
 state = {
@@ -38,14 +39,24 @@ state = {
     //     return sum / grades.length;      
     // }    
 
+      handleNameChange = (event) => {
+          this.setState({
+              [event.target.name]: event.target.value
+          })
+      }
+
 
 
       render() {
         return (
-            <div className="studentInfo">
+            <div>
                 {this.state.students.map(student => <li> {student.pic} {student.firstName} {student.lastName} <br></br> Email: {student.email} <br></br>Company: {student.company} <br></br>Skill: {student.skill} <br></br> </li>)}
                 {/* Average: {this.props.students.average} */}
                 {/* {this.state.students.grades.reduce((previous, current) => current += previous / this.state.students.grades.length)} */}
+                <form action="" className="searchForm">
+                <input type="text" name="student.firstName" value = "this.state.firstName" placeholder="Search by name" onChange={this.handleNameChange}/>
+
+                </form>
             </div>
         )
 
